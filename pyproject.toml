@@ -1,0 +1,28 @@
+[project]
+name = "greece-flood"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Jenny Barrera & Yuqing Zheng",email = "you@example.com"}
+]
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "geopandas (>=1.1.2,<2.0.0)",
+    "pandas (<3)",
+    "numpy (>=1.25,<2.0)",
+    "shapely (>=2.1.2,<3.0.0)",
+    "matplotlib (>=3.10.8,<4.0.0)",
+    "folium (>=0.20.0,<0.21.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "fiona (>=1.10.1,<2.0.0)",
+    "pyproj (>=3.7.2,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [
+    { include = "flood_project", from = "src" }
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
