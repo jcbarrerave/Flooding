@@ -1,0 +1,13 @@
+name: flood
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - gdal
+  - proj
+  - shapely
+  - rasterio
+  - pyproj
+  - fiona
+  - geopandas
+prefix: D:\conda\envs\flood

@@ -4,34 +4,33 @@ inputs:
 - raster_data\ndwi_time\2023-09-10-00_00_2023-09-10-23_59_Sentinel-2_L2A_NDWI.tiff
 - raster_data\ndwi_time\2023-09-15-00_00_2023-09-15-23_59_Sentinel-2_L2A_NDWI.tiff
 reference_grid:
-  crs: PROJCS["WGS 84 / UTM zone 34N",GEOGCS["WGS 84",DATUM["World Geodetic System
-    1984",SPHEROID["WGS 84",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",21],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH]]
+  crs: EPSG:4326
   transform:
-  - 14.098181588799973
+  - 0.0001636964000000006
   - 0.0
-  - 565553.402602
+  - 21.761169
   - 0.0
-  - -14.24826023553761
-  - 4383826.154435
+  - -0.00012637485242030587
+  - 39.598281
   width: 2500
   height: 1694
 threshold: 0.1
 stats:
   '2023-08-31':
-    mean: 28433.68359375
-    min: 3714.0
-    max: 65535.0
-    flooded_ratio_ndwi_gt_thr: 1.0
+    mean: -0.5764465928077698
+    min: -0.8963752388954163
+    max: 0.7919429540634155
+    flooded_ratio_ndwi_gt_thr: 0.00035914994077757
   '2023-09-10':
-    mean: 36445.91015625
-    min: 2282.0
-    max: 65535.0
-    flooded_ratio_ndwi_gt_thr: 1.0
+    mean: -0.26416024565696716
+    min: -0.9584032893180847
+    max: 0.861764669418335
+    flooded_ratio_ndwi_gt_thr: 0.15774191915988922
   '2023-09-15':
-    mean: 40356.39453125
-    min: 119.0
-    max: 65535.0
-    flooded_ratio_ndwi_gt_thr: 1.0
+    mean: -0.3142000734806061
+    min: -0.8646230697631836
+    max: 0.992255449295044
+    flooded_ratio_ndwi_gt_thr: 0.06567084044218063
 outputs:
   ndwi_change_last_minus_first: data\output\ndwi_change_last_minus_first.tif
   ndwi_time_mean: data\output\ndwi_time_mean.tif
