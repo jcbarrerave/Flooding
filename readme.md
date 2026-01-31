@@ -105,22 +105,19 @@ poetry run python -m flood_project.vector.run_d
 ## Stage E – Visualization
 
 ### Objective
-Communicate flood exposure and impact before, during, and after the flood event using static visualizations.
+Communicate flood exposure and impact during, and after the flood event using static visualizations.
 
 ### Inputs
-- Buildings before flooding
 - Buildings with flood status
 - Administrative units and flood summary statistics
 - Flood mask raster
 
 ### Visualizations
-- Reference map showing buildings and administrative units before the flood
 - Map showing flood extent and affected buildings during the flood
 - Choropleth map showing relative flood impact as the percentage of flooded buildings per administrative unit
 - Bar chart showing absolute numbers of flooded buildings for the most affected administrative units
 
 ### Outputs
-- fig_before.png
 - fig_during.png
 - map_admin_impact.png
 - summary_plot.png
