@@ -1,0 +1,11 @@
+Vector Processing QC Report (Stage C)
+-----------------------------------
+
+Input buildings: 38174
+Administrative units: 29
+
+Invalid geometries before cleaning: 0
+Invalid geometries after cleaning: 0
+
+CRS used: EPSG:32634
+Buildings without admin_id: 60
