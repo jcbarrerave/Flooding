@@ -43,3 +43,91 @@ Dependencies are specified in:
 - requirements-pip.txt (additional pip packages)
 
 Tested on Windows using conda-forge packages.
+
+--------------------------------------------------------------------------------------------------
+
+# Flood Impact Assessment – Stages C, D and E
+
+This document describes the workflow used to assess flood impacts on buildings through vector processing, raster–vector integration, and visualization. The workflow is implemented as a modular and reproducible pipeline in Python and managed with Poetry.
+
+## Stage C – Vector Data Preparation
+
+### Objective
+Prepare clean and spatially consistent vector datasets of building footprints and administrative units, and assign each building to its corresponding administrative unit.
+
+### Inputs
+- Raw building footprints
+- Administrative boundaries (ADM level 3)
+- Processed flood mask raster (used only to define the area of interest)
+
+### Processing Steps
+- Read vector data using GeoPandas and Fiona
+- Derive the area of interest from the flood mask raster extent
+- Identify and fix invalid geometries using Shapely
+- Remove duplicate geometries
+- Reproject all vector layers to a common CRS
+- Clip buildings and administrative units to the area of interest
+- Assign administrative unit identifiers to buildings using a spatial join
+- Record basic quality control information
+
+### Outputs
+- buildings_admin.gpkg
+- admin_units_adm3.gpkg
+- qc_vector_prep.txt
+
+### Execution
+poetry run python -m flood_project.vector.run_c
+
+## Stage D – Raster–Vector Integration and Statistics
+
+### Objective
+Identify flooded buildings and aggregate flood impact statistics by administrative unit.
+
+### Inputs
+- Processed buildings with administrative IDs
+- Processed administrative units
+- Binary flood mask raster
+
+### Processing Steps
+- Compute building centroids
+- Sample the flood mask raster at centroid locations
+- Create a binary flooded indicator for each building
+- Aggregate flooded and total building counts by administrative unit
+- Join aggregated statistics back to administrative geometries
+
+### Outputs
+- buildings_flooded.gpkg
+- admin_flood_summary.gpkg
+
+### Execution
+poetry run python -m flood_project.vector.run_d
+
+## Stage E – Visualization
+
+### Objective
+Communicate flood exposure and impact before, during, and after the flood event using static visualizations.
+
+### Inputs
+- Buildings before flooding
+- Buildings with flood status
+- Administrative units and flood summary statistics
+- Flood mask raster
+
+### Visualizations
+- Reference map showing buildings and administrative units before the flood
+- Map showing flood extent and affected buildings during the flood
+- Choropleth map showing relative flood impact as the percentage of flooded buildings per administrative unit
+- Bar chart showing absolute numbers of flooded buildings for the most affected administrative units
+
+### Outputs
+- fig_before.png
+- fig_during.png
+- map_admin_impact.png
+- summary_plot.png
+
+### Execution
+poetry run python -m flood_project.viz.run_e
+
+## Interpretation Notes
+
+Flood impact is expressed using both relative percentages and absolute counts. Percentages allow comparison across administrative units of different sizes, while absolute counts provide context for small units with few buildings. Both representations should be interpreted together.
