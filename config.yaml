@@ -1,0 +1,27 @@
+paths:
+  # Module A inputs (single date bands, for A/B)
+  b03: raster_data/2023-09-10-00_00_2023-09-10-23_59_Sentinel-2_L2A_B03_(Raw).tiff
+  b08: raster_data/2023-09-10-00_00_2023-09-10-23_59_Sentinel-2_L2A_B08_(Raw).tiff
+
+  # Module A output folder (preprocessed B03/B08)
+  out_dir: data/interim/s2_preprocessed
+
+  # Common outputs for Module B + cube_demo + run_log
+  output_dir: data/output
+
+  # cube_demo inputs (3 dates NDWI GeoTIFFs)
+  ndwi_time_dir: raster_data/ndwi_time
+
+processing:
+  reference: b03
+  resampling_continuous: bilinear
+  resampling_mask: nearest
+
+ndwi:
+  scale: 10000.0
+  threshold: 0.1
+  nodata: -9999.0
+
+tensor_denoise:
+  kernel_size: 3
+  threshold: 0.5
