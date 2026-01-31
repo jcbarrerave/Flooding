@@ -38,7 +38,7 @@ def _extract_date_str(filename: str) -> str:
 
 def _list_ndwi_files(ndwi_dir: Path) -> List[Path]:
     """List NDWI GeoTIFFs in a folder and sort by date extracted from filename."""
-    tifs = sorted(ndwi_dir.glob("*.tif*"))
+    tifs = list(ndwi_dir.glob("*.tif")) + list(ndwi_dir.glob("*.tiff"))
     if not tifs:
         raise FileNotFoundError(f"No .tif/.tiff files found in: {ndwi_dir}")
 
