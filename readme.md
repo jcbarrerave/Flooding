@@ -38,15 +38,6 @@ Raster-based flood mapping using Sentinel-2 L2A imagery. Flooded areas are deriv
 4. Build a multi-temporal NDWI datacube
 5. Produce temporal statistics and change products
 
-## Environment Setup (Windows / conda-forge)
-
-### 1) Create conda environment
-conda env create -f environment.yml  
-conda activate flood
-
-### 2) Install pip dependencies
-pip install -r requirements-pip.txt
-
 ## Run
 
 From the project root directory:
