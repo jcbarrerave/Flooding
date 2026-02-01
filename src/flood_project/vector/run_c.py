@@ -16,6 +16,8 @@ Execution
 Run this module from the project root using:
 
     poetry run python -m flood_project.vector.run_c
+    or using conda
+    python src/flood_project/vector/run_c.py
 
 Inputs
 ------
@@ -137,4 +139,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
