@@ -3,7 +3,7 @@ Please before running the code be sure you have the data folder.
 
 Download the folder using this link:
 
-[data](https://universiteittwente-my.sharepoint.com/:f:/r/personal/j_c_barreravelandia_student_utwente_nl/Documents/data?csf=1&web=1&e=1h36a0)
+[data](https://universiteittwente-my.sharepoint.com/:f:/g/personal/j_c_barreravelandia_student_utwente_nl/IgD8WVNOrx50R6AEdwuHusLoAauio0PJxleHTPem6-QeYSI?e=Xj8r9Q)
 
 # Flood Mapping and Impact Assessment
 
