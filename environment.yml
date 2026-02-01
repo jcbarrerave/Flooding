@@ -1,13 +1,17 @@
 name: flood
 channels:
-  - defaults
+  - conda-forge
 dependencies:
-  - python=3.11
+  - python=3.10
+  - pip
   - gdal
-  - proj
-  - shapely
   - rasterio
-  - pyproj
   - fiona
   - geopandas
-prefix: D:\conda\envs\flood
+  - shapely
+  - pyproj
+  - pandas
+  - numpy
+  - matplotlib
+  - folium
+  - requests
