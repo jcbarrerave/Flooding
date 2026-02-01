@@ -8,14 +8,14 @@ The workflow is fully reproducible and designed to run directly from a ZIP file 
 1. Download the project as a ZIP file and unzip it.  
 2. Open a terminal (or VS Code) in the project root directory.
 
-//bash//
-conda env create -f environment.yml
-conda activate flood
-pip install -r requirements-pip.txt
-python run_raster_pipeline.py
-python src/flood_project/vector/run_c.py
-python src/flood_project/vector/run_d.py
-python src/flood_project/viz/run_e.py
+bash
+1. conda env create -f environment.yml
+2. conda activate flood
+3. pip install -r requirements-pip.txt
+4. python run_raster_pipeline.py
+5. python src/flood_project/vector/run_c.py
+6. python src/flood_project/vector/run_d.py
+7. python src/flood_project/viz/run_e.py
 
 # Flood Mapping with Sentinel-2 NDWI Datacube
 
