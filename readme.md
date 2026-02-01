@@ -1,8 +1,10 @@
-# Data source
-Please before running the code be sure you have the data folder.
+# Data Source
+
+Before running the code, make sure the **`data`** folder is available.
+
+Download the **`data`** folder using the provided link. When opening the link, right-click on the **`data`** folder and download it, ensuring that there is **no nested `data` folder inside**. Once downloaded, place the **`data`** folder in the project’s **root directory**.
 
 Download the folder using this link:
-
 [data](https://universiteittwente-my.sharepoint.com/:f:/g/personal/j_c_barreravelandia_student_utwente_nl/IgD8WVNOrx50R6AEdwuHusLoAauio0PJxleHTPem6-QeYSI?e=Xj8r9Q)
 
 # Flood Mapping and Impact Assessment
