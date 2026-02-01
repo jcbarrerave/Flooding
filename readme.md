@@ -1,3 +1,8 @@
+# Data source
+Please before running the code be sure you have the data folder
+
+https://universiteittwente-my.sharepoint.com/:f:/g/personal/j_c_barreravelandia_student_utwente_nl/IgD8WVNOrx50R6AEdwuHusLoARASG2go9Eyvgkq9r06FFJM?e=xXsa8l
+
 # Flood Mapping and Impact Assessment
 
 This project performs raster-based flood mapping using Sentinel-2 NDWI and assesses flood impacts on buildings through vector–raster integration and visualization.  
