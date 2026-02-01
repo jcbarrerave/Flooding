@@ -65,11 +65,11 @@ Tested on Windows using conda-forge packages.
 
 --------------------------------------------------------------------------------------------------
 
-# Flood Impact Assessment – Stages C, D and E
+# Flood Impact Assessment
 
 This section describes the workflow used to assess flood impacts on buildings through vector processing, raster–vector integration, and visualization. The workflow is implemented as a modular and reproducible pipeline in Python and managed with Poetry.
 
-## Stage C – Vector Data Preparation
+## Vector Data Preparation
 
 ### Objective
 Prepare clean and spatially consistent vector datasets of building footprints and administrative units, and assign each building to its corresponding administrative unit.
@@ -97,7 +97,7 @@ Prepare clean and spatially consistent vector datasets of building footprints an
 ### Execution
 poetry run python -m flood_project.vector.run_c
 
-## Stage D – Raster–Vector Integration and Statistics
+## Raster–Vector Integration and Statistics
 
 ### Objective
 Identify flooded buildings and aggregate flood impact statistics by administrative unit.
@@ -121,7 +121,7 @@ Identify flooded buildings and aggregate flood impact statistics by administrati
 ### Execution
 poetry run python -m flood_project.vector.run_d
 
-## Stage E – Visualization
+## Visualization
 
 ### Objective
 Communicate flood exposure and impact during, and after the flood event using static visualizations.
