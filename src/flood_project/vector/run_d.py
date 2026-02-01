@@ -26,6 +26,13 @@ Outputs
 - outputs/vector/admin_flood_summary.gpkg
 - outputs/vector/admin_flood_summary.csv
 """
+import sys
+from pathlib import Path
+
+# Add project root /src to PYTHONPATH
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from flood_project.config.paths import (
     OUTPUTS_DIR,
@@ -120,4 +127,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
