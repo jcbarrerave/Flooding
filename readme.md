@@ -8,7 +8,7 @@ The workflow is fully reproducible and designed to run directly from a ZIP file 
 1. Download the project as a ZIP file and unzip it.  
 2. Open a terminal (or VS Code) in the project root directory.
 
-bash
+bash: in the terminal run the following commands
 1. conda env create -f environment.yml
 2. conda activate flood
 3. pip install -r requirements-pip.txt
