@@ -2,7 +2,7 @@
 Mapping utilities for flood visualization (Stage E).
 
 This module contains functions to visualize flood extent and
-flood impact before, during, and after the flood event.
+flood impact during, and after the flood event.
 """
 
 from pathlib import Path
@@ -96,4 +96,5 @@ def plot_admin_impact(
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(output_path, dpi=300, bbox_inches="tight")
+
     plt.close(fig)
