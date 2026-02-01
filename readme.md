@@ -1,7 +1,9 @@
 # Data source
-Please before running the code be sure you have the data folder
+Please before running the code be sure you have the data folder.
 
-data
+Download the folder using this link:
+
+[data](https://universiteittwente-my.sharepoint.com/:f:/r/personal/j_c_barreravelandia_student_utwente_nl/Documents/data?csf=1&web=1&e=1h36a0)
 
 # Flood Mapping and Impact Assessment
 
