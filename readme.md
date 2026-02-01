@@ -26,6 +26,15 @@ bash: in the terminal run the following commands
 6. python src/flood_project/vector/run_d.py
 7. python src/flood_project/viz/run_e.py
 
+## Running Tests
+
+To run the unit tests, the project must be installed in editable mode so that the
+`flood_project` package can be discovered by Python.
+
+bash
+pip install -e .
+pytest
+
 # Flood Mapping with Sentinel-2 NDWI Datacube
 
 Raster-based flood mapping using Sentinel-2 L2A imagery. Flooded areas are derived from NDWI thresholding and analyzed over time with a simple raster datacube.
