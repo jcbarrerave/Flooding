@@ -1,7 +1,7 @@
 # Data source
 Please before running the code be sure you have the data folder
 
-https://universiteittwente-my.sharepoint.com/:f:/g/personal/j_c_barreravelandia_student_utwente_nl/IgD8WVNOrx50R6AEdwuHusLoARASG2go9Eyvgkq9r06FFJM?e=xXsa8l
+data
 
 # Flood Mapping and Impact Assessment
 
