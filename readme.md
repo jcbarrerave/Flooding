@@ -31,9 +31,9 @@ bash: in the terminal run the following commands
 To run the unit tests, the project must be installed in editable mode so that the
 `flood_project` package can be discovered by Python.
 
-bash
-pip install -e .
-pytest
+Execute:
+1. pip install -e .
+2. pytest
 
 # Flood Mapping with Sentinel-2 NDWI Datacube
 
