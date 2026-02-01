@@ -1,3 +1,22 @@
+# Flood Mapping and Impact Assessment
+
+This project performs raster-based flood mapping using Sentinel-2 NDWI and assesses flood impacts on buildings through vector–raster integration and visualization.  
+The workflow is fully reproducible and designed to run directly from a ZIP file using Conda.
+
+## How to Run
+
+1. Download the project as a ZIP file and unzip it.  
+2. Open a terminal (or VS Code) in the project root directory.
+
+bash
+conda env create -f environment.yml
+conda activate flood
+pip install -r requirements-pip.txt
+python run_raster_pipeline.py
+python src/flood_project/vector/run_c.py
+python src/flood_project/vector/run_d.py
+python src/flood_project/viz/run_e.py
+
 # Flood Mapping with Sentinel-2 NDWI Datacube
 
 Raster-based flood mapping using Sentinel-2 L2A imagery. Flooded areas are derived from NDWI thresholding and analyzed over time with a simple raster datacube.
